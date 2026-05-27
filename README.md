@@ -43,6 +43,9 @@ Follow these simple steps to run the interactive dashboard locally:
 4. When prompted, browse and select the sample file `dataset/client_behavior_example.csv` (or upload your custom formatted data).
 5. Explore the interactive visual charts, filters, and dynamic slicers.
 
+<img width="766" height="770" alt="Capture d’écran 2026-05-27 144117" src="https://github.com/user-attachments/assets/8d3a4943-1552-4e87-b1fd-e1e723ed4266" />
+
+
 ---
 
 ## 🔮 Future Roadmap & Improvements
