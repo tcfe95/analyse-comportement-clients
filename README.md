@@ -1,51 +1,53 @@
-# 📊 Analyse du comportement des clients - Power BI
+# 📊 Customer Behavior Analysis Dashboard — Power BI
 
-##  Description du projet
-Ce projet consiste à analyser le **comportement des clients** à partir des données de ventes et interactions, afin de mieux comprendre leurs habitudes et anticiper leurs besoins.  
+An interactive, end-to-end Power BI dashboard designed to analyze customer purchase behavior, transaction histories, and engagement patterns to unlock actionable business insights and anticipate future needs.
 
-Le projet est réalisé sous forme d’un **dashboard Power BI** interactif, utilisant un template `.pbit` pour permettre aux utilisateurs de charger leurs propres données et d’explorer les visualisations.
-
----
-
-##  Outils utilisés
-- **Power BI Desktop** pour la création du dashboard  
-- **DAX** pour les mesures et calculs avancés  
-- **CSV/Excel** pour les datasets  
-- Graphiques interactifs : bar charts, line charts, KPIs, slicers  
+This repository is distributed as a Power BI Template (`.pbit`), allowing users to easily load the provided sample dataset or plug in their own data seamlessly.
 
 ---
 
-##  Fonctionnalités principales
-- Dashboard interactif avec filtres et slicers  
-- Analyse segmentée des clients par fréquence d’achat et valeur  
-- Suivi des performances par produit et par région  
-- Visualisation des ventes, marges et résultats  
-- Possibilité de tester le dashboard avec un **CSV exemple fourni**  
+## 🛠️ Tech Stack & Features
+
+* **Power BI Desktop:** Dashboard design, data modeling, and report authoring.
+* **DAX (Data Analysis Expressions):** Advanced calculated measures, KPIs, and time-intelligence functions.
+* **Data Sources:** Structured CSV / Excel files.
+* **Interactive Elements:** Dynamic cross-filtering, multi-attribute slicers, trends over time, and geographical mapping.
 
 ---
 
-## 📁 Dataset
-Le dataset exemple utilisé : `client_behavior_example.csv` (inclus dans le dossier `dataset/`)  
+## 🚀 Key Functional Features
 
-> Ce fichier est un exemple généré pour permettre l’utilisation du template.  
-> Les utilisateurs peuvent remplacer ce CSV par leurs propres données en respectant la structure des colonnes suivante :  
-> - ClientID, Client, ClientStatut, ClientDate, VenteDate, ClienteleCode, ClienteleType, Ville, PaysCode, Pays, ArticleID, Article, GammeID, Gamme, RemiseCode, RemiseType, CanalID, Canal, FabricantID, Fabricant, CUHT, VenteNombre, PUHT, VenteBrut, Remise, VenteNet, Cout, Resultat, DateJourNumero, DateJourCourt, DateMoisNumero, DateMoisNom, DateAnneeSemaine, DateAnnee
-
----
-
-##  Instructions pour utiliser le projet
-1. Télécharger le fichier **template** : `Analyse_Comportement_Clients.pbit`  
-2. Ouvrir le template avec **Power BI Desktop**  
-3. Charger le dataset exemple (`client_behavior_example.csv`) ou vos propres données  
-4. Explorer le dashboard interactif et utiliser les filtres/slicers  
+* **Behavioral Segmentation:** Analyze customer cohorts grouped by purchase frequency, volume, and total order value.
+* **Performance Tracking:** Drill down into sales, profit margins, and net results aggregated by product categories and regions.
+* **High-Level KPIs:** Instant visibility into core business metrics (Gross Sales, Net Sales, Discounts, Costs, and Final Revenue).
+* **Plug-and-Play Architecture:** Easily test the dashboard using the included pre-formatted sample CSV dataset.
 
 ---
 
-##  Perspectives d’amélioration
-- Connecter le dashboard à une **base de données live** pour mise à jour automatique  
-- Ajouter des mesures avancées avec **DAX** pour prédiction du comportement client  
-- Publier le dashboard sur **Power BI Service** pour partage avec les équipes  
-- Ajouter des visualisations supplémentaires : heatmaps, clustering de clients, KPI dynamiques  
+## 📁 Dataset & Column Schema
+
+The template runs on a sample dataset located in the repository: `dataset/client_behavior_example.csv`. 
+
+> 💡 **Custom Data Integration:** You can easily swap this file out for your own business data. To ensure successful automated data mapping, your data schema must match the following columns:
+> `ClientID`, `Client`, `ClientStatus`, `ClientDate`, `VenteDate`, `ClienteleCode`, `ClienteleType`, `City`, `CountryCode`, `Country`, `ArticleID`, `Article`, `GammeID`, `Gamme`, `RemiseCode`, `RemiseType`, `CanalID`, `Canal`, `FabricantID`, `Fabricant`, `CUHT` (Unit Cost Excl. Tax), `VenteNombre` (Quantity Sold), `PUHT` (Unit Price Excl. Tax), `VenteBrut` (Gross Sales), `Remise` (Discount), `VenteNet` (Net Sales), `Cout` (Total Cost), `Resultat` (Net Profit), `DateJourNumero`, `DateJourCourt`, `DateMoisNumero`, `DateMoisNom`, `DateAnneeSemaine`, `DateAnnee`.
 
 ---
 
+## ⚙️ Quick Start Guide
+
+Follow these simple steps to run the interactive dashboard locally:
+
+1. **Clone or Download** this repository to your local machine.
+2. Locate the **Power BI Template file**: `Analyse_Comportement_Clients.pbit`.
+3. Open the file using **Power BI Desktop** (free version available via Microsoft Store).
+4. When prompted, browse and select the sample file `dataset/client_behavior_example.csv` (or upload your custom formatted data).
+5. Explore the interactive visual charts, filters, and dynamic slicers.
+
+---
+
+## 🔮 Future Roadmap & Improvements
+
+- [ ] **Live Data Integration:** Connect the model directly to a cloud database (SQL Server, Snowflake) for automated schedules and real-time updates.
+- [ ] **Advanced Customer Analytics:** Implement predictive behavior metrics using DAX and integrated Python/R scripts for customer churn analysis.
+- [ ] **Cloud Deployment:** Publish the dashboard report to **Power BI Service** to showcase workspace sharing, access control, and mobile layouts.
+- [ ] **Advanced Visuals:** Add automated cluster analysis (AI-driven segmentation) and geographic heatmaps.
